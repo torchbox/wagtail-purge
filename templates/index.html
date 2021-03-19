@@ -1,0 +1,33 @@
+{% extends "wagtailadmin/base.html" %}
+{% load wagtailadmin_tags %}
+{% load i18n %}
+
+{% block titletag %}{% trans "CDN Purge" %}{% endblock %}
+
+{% block extra_js %}
+{{ block.super }}
+{{ form.media.js }}
+{% include "wagtailadmin/pages/_editor_js.html" %}
+{% endblock %}
+
+{% block extra_css %}
+{{ block.super }}
+{{ form.media.css }}
+{% endblock %}
+
+{% block content %}
+{% trans "CDN Purge" as title_str %}
+{% include "wagtailadmin/shared/header.html" with title=title_str icon="collapse-up" %}
+
+<div class="nice-padding">
+    <form action="{% url 'purge' %}" method="POST" novalidate>
+        {% csrf_token %}
+        <ul class="fields">
+            {% for field in form %}
+            {% include "wagtailadmin/shared/field_as_li.html" with field=field %}
+            {% endfor %}
+            <li><input type="submit" value="{% trans 'Submit Purge Request' %}" class="button" /></li>
+        </ul>
+    </form>
+</div>
+{% endblock %}
