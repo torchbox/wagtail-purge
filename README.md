@@ -8,4 +8,4 @@ A simple admin UI for removing individual pages from your CDN's cache. Assumes t
 2. Add `"wagtail_purge"` to your `INSTALLED_APPS`
 3. Visit 'CDN purge' in your admin settings menu
 
-![wagtail-purge screenshot](https://tom.s3.amazonaws.com/share/wagtail-purge.png)
+![wagtail-purge screenshot](https://raw.githubusercontent.com/tomdyson/wagtail-purge/main/wagtail-purge.png)
