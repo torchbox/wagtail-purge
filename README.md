@@ -5,5 +5,5 @@ A simple admin UI for removing individual pages from your CDN's cache. Assumes t
 ## Instructions
 
 1. Install this app with `pip install wagtail-purge`
-2. Add `"wagtail-purge"` to your `INSTALLED_APPS`
+2. Add `"wagtail_purge"` to your `INSTALLED_APPS`
 3. Visit 'CDN purge' in your admin settings menu

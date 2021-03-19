@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="wagtail_purge",
+    name="wagtail-purge",
     version=0.1,
     description="Purge individual URLs from the Wagtail admin",
     long_description=long_description,
