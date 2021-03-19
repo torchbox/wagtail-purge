@@ -1,5 +1,7 @@
 # Wagtail Purge
 
+![wagtail-purge screenshot](https://tom.s3.amazonaws.com/share/wagtail-purge.png)
+
 A simple admin UI for removing individual pages from your CDN's cache. Assumes that your Wagtail site has already been configured with [frontend cache invalidation](https://docs.wagtail.io/en/stable/reference/contrib/frontendcache.html).
 
 ## Instructions
