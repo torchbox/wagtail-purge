@@ -11,5 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Add support for Wagtail 3.0 and drop support for all Wagtail versions
    before 2.15
    
- - Add support for Django 4.0 and drop support for all Django versions
-   before 3.0
+ - Drop support for all Django versions before 3.0
