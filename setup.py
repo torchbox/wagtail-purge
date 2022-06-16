@@ -16,8 +16,10 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
+        "Framework :: Django :: 3.2",
         "Framework :: Wagtail",
         "Framework :: Wagtail :: 2",
+        "Framework :: Wagtail :: 3",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
@@ -29,6 +31,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "wagtail>=2",
+        "wagtail>=2.15",
+        "django>=3.0,<4.0"
     ],
 )

@@ -1,4 +1,8 @@
-from wagtail.core import hooks
+try:
+    from wagtail import hooks
+except ImportError:
+    # Wagtail<3.0
+    from wagtail.core import hooks
 from wagtail.admin.menu import AdminOnlyMenuItem
 from django.urls import include, reverse, path
 from . import admin_urls
