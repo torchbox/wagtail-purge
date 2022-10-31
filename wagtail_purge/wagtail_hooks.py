@@ -1,12 +1,13 @@
-try:
-    from wagtail import hooks
-except ImportError:
-    # Wagtail<3.0
-    from wagtail.core import hooks
-from wagtail.admin.menu import AdminOnlyMenuItem
 from django.urls import include, reverse, path
-from . import admin_urls
+from wagtail import VERSION as WAGTAIL_VERSION
+from wagtail.admin.menu import AdminOnlyMenuItem
 
+if WAGTAIL_VERSION >= (3, 0):
+    from wagtail import hooks
+else:
+    from wagtail.core import hooks
+    
+from . import admin_urls
 
 @hooks.register("register_admin_urls")
 def register_admin_urls():
