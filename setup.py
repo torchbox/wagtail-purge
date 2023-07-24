@@ -17,10 +17,12 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Django",
         "Framework :: Django :: 3.2",
-        "Framework :: Django :: 4.0",
         "Framework :: Django :: 4.1",
+        "Framework :: Django :: 4.2",
         "Framework :: Wagtail",
-        "Framework :: Wagtail :: 4",
+        "Framework :: Wagtail :: 4.1",
+        "Framework :: Wagtail :: 4.2",
+        "Framework :: Wagtail :: 5",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
@@ -32,6 +34,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "wagtail>=4.1",
+        "wagtail>=4.1,<6.0",
     ],
 )
