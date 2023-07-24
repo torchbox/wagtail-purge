@@ -34,6 +34,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "wagtail>=4.1",
+        "wagtail>=4.1,<6.0",
     ],
 )
