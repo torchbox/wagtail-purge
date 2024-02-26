@@ -1,5 +1,5 @@
 from .views import purge
 
-from django.urls import re_path
+from django.urls import path
 
-urlpatterns = [re_path(r"^$", purge, name="purge")]
+urlpatterns = [path("", purge, name="purge")]
