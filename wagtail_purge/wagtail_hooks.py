@@ -17,6 +17,6 @@ def register_purge_menu_item():
     return AdminOnlyMenuItem(
         "CDN purge",
         reverse("purge"),
-        classnames="icon icon-collapse-down",
         order=1000,
+        classname="icon icon-collapse-down",
     )
